@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "name": "John Smith",
+      "email": "js@gmail.com",
+      "message": "this is a message",
+      "id": 1
+    },
+    {
+      "name": "Alex Miller",
+      "email": "alx.miller2030@gmail.com",
+      "message": "another message",
+      "id": 2
+    }
+  ]
+}
