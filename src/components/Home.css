@@ -1,0 +1,90 @@
+
+.crypto-search {
+    display: flex;
+    justify-content: center;
+
+}
+
+.crypto-search input {
+    width: 350px;
+    padding: 13px 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    border: none;
+}
+
+.crypto-search input::placeholder {
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.crypto-search input:focus {
+    outline: none;
+}
+
+.coin-headers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 20px;
+    color: goldenrod;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.no-coins {
+    color: crimson;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.go-back {
+    background-color: crimson;
+    color: whitesmoke;
+    display: block;
+    margin: 40px auto;
+    width: 150px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+}
+
+.go-back:hover {
+    background-color: whitesmoke;
+    color: crimson;
+}
+
+.coin {
+    border-bottom: 1px solid whitesmoke;
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.coin:hover {
+    transform: scale(1.09);
+}
+
+.coin-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);   
+}
+
+.coin-symbol {
+    width: 30px;
+}
+
+.coin-rank {
+    padding-left: 10px;
+}

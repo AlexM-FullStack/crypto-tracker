@@ -1,28 +1,42 @@
-import React from 'react'
-import {FaCreativeCommonsNcEu} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import { NavLink } from "react-router-dom"
 import './Navbar.css'
+import {BsCurrencyBitcoin} from 'react-icons/bs'
 
 const Navbar = () => {
-    return (
-        <div className="navbar">
-            
-                <div className="navbar-logo">
-                    <Link to='/' className='navbar-link'>
-                        <FaCreativeCommonsNcEu className='icon' />
-                        <h1> Crypto<span>Tracker</span></h1>
-                    </Link>
-                </div>
-            
+  return (
+    <nav className="navbar">
+      
+      <div className="logo">
+        <BsCurrencyBitcoin className="logo-icon"/>
+        <h3>CryptoTrack</h3>
+      </div>
 
-            <div className="navbar-others">
-                <Link to='/' className='nav-right'>Home</Link>
-                <Link to='/about' className='nav-right'>About</Link>
-                <Link to='/contact' className='nav-right'>Contact</Link>
-            </div>  
+      <ul className="navlinks">
+        <li className="navlink">
+          <NavLink exact='true' to='/' activeclassname='active'>
+            Home
+          </NavLink>
+        </li>
 
-        </div>
-    )
+        <li className="navlink">
+          <NavLink exact='true' to='/about' activeclassname='active'>
+            About
+          </NavLink>
+        </li>
+
+        <li className="navlink">
+          <NavLink exact='true' to='/watchlist' activeclassname='active'>
+            Watchlist
+          </NavLink>
+        </li>
+      </ul>
+
+
+
+
+
+    </nav>
+  )
 }
 
 export default Navbar
